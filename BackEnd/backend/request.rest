@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoid2FoeXUiLCJlbWFpbCI6IndhaHl1QGdtYWlsLmNvbSIsImlhdCI6MTY4NzgzMDU1MiwiZXhwIjoxNjg3ODMwNTcyfQ.CjLEM0OXEzoqxHwFPTDW5tKXvDA9oJjPFffHtgfCpCk
+
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "iyooo",
+    "email" : "wahyu@gmail.com",
+    "country" : "genteng",
+    "password" : "wahyu123",
+    "confPassword": "wahyu123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "nadia@gmail.com",
+    "password":  "wahyu123"
+    
+}
+
+###
+DELETE  http://localhost:5000/logout
